@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+      <h1>Transactions</h1>
+        <!--<form action="/login" method="POST">-->
+        <form action="http://localhost:3000/oauth/authorize" method="GET">
+            <fieldset>
+                <input type="hidden" name="redirect_uri" value="http://localhost:5000/callback">
+                <input type="hidden" name="client_id" value="test">
+              
+              <button type ="submit">Submit</button>
+            </fieldset>
+           </form>
+    </body>
+</html>
